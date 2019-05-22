@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/BackgroundColor"
+    tools:context=".Activity.AddTrip">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/NoActionBarColor">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/add_trip"
+                android:textAlignment="center"
+                android:textColor="@color/White"
+                android:textSize="25dp"
+                android:textStyle="normal" />
+        </android.support.v7.widget.Toolbar>
+
+        <TextView
+            android:text="Trip Name"
+            android:textSize="18sp"
+            android:textColor="@color/Black"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/tripNameET"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:inputType="text"
+            android:singleLine="true"
+            android:imeOptions="actionNext"
+            android:background="@drawable/rounded_edit_text"
+            android:padding="10dp"
+            android:hint="Trip Name"
+            android:drawableLeft="@drawable/ic_tram_black_24dp"
+            android:textColor="@color/Black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="Trip Description"
+            android:textSize="18sp"
+            android:textColor="@color/Black"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/tripDescriptionET"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:inputType="text"
+            android:singleLine="true"
+            android:imeOptions="actionNext"
+            android:background="@drawable/rounded_edit_text"
+            android:padding="10dp"
+            android:hint="Trip Description"
+            android:drawableLeft="@drawable/ic_description_black_24dp"
+            android:textColor="@color/Black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="Trip Budget"
+            android:textSize="18sp"
+            android:textColor="@color/Black"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/tripBudgetET"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:inputType="number"
+            android:singleLine="true"
+            android:imeOptions="actionDone"
+            android:background="@drawable/rounded_edit_text"
+            android:padding="10dp"
+            android:hint="Trip Budget"
+            android:drawableLeft="@drawable/ic_taka"
+            android:textColor="@color/Black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="Trip Start Date"
+            android:textSize="18sp"
+            android:textColor="@color/Black"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tripStartDateTV"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:inputType="date"
+            android:background="@drawable/rounded_edit_text"
+            android:padding="10dp"
+            android:hint="Trip Start Date"
+            android:drawableLeft="@drawable/ic_date_range_black_24dp"
+            android:textColor="@color/Black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="Trip End Date"
+            android:textSize="18sp"
+            android:textColor="@color/Black"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tripEndDateTV"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:inputType="date"
+            android:background="@drawable/rounded_edit_text"
+            android:padding="10dp"
+            android:hint="Trip End Date"
+            android:drawableLeft="@drawable/ic_date_range_black_24dp"
+            android:textColor="@color/Black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/addTripBtn"
+            android:layout_marginTop="35dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_gravity="center"
+            android:text="@string/add_trip"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:textColor="@color/Black"
+            android:background="@drawable/rounded_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"/>
+
+
+    </LinearLayout>
+
+</ScrollView>

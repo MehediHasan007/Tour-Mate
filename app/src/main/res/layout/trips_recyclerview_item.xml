@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    app:cardCornerRadius="5dp"
+    android:layout_margin="5dp"
+    card_view:cardElevation="5dp"
+    card_view:cardUseCompatPadding="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="@color/White"
+            android:weightSum="3"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tripNameTV"
+                android:hint="Trip Name"
+                android:textSize="18dp"
+                android:padding="2dp"
+                android:textColor="@color/Black"
+                android:layout_weight="1"
+                android:layout_marginLeft="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:id="@+id/tripDescriptionTV"
+                android:hint="Trip Description"
+                android:textSize="14dp"
+                android:padding="2dp"
+                android:textColor="@color/Black"
+                android:layout_weight="1"
+                android:layout_marginLeft="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                android:background="@color/White"
+                android:layout_width="match_parent"
+                android:layout_height="30dp">
+
+                <Button
+                    android:id="@+id/detailsBtn"
+                    android:layout_weight="1"
+                    android:text="Details"
+                    android:textAllCaps="false"
+                    android:textColor="#0D2FF0"
+                    android:background="@color/White"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <Button
+                    android:id="@+id/expenseBtn"
+                    android:layout_weight="1"
+                    android:text="Expense"
+                    android:textAllCaps="false"
+                    android:textColor="#0D2FF0"
+                    android:background="@color/White"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <Button
+                    android:id="@+id/memoriesBtn"
+                    android:text="Memories"
+                    android:textAllCaps="false"
+                    android:background="@color/White"
+                    android:textColor="#0D2FF0"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+        
+        <ImageView
+            android:id="@+id/popUpMenuIV"
+            android:src="@drawable/ic_more_vert_black_24dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        
+    </LinearLayout>
+
+    
+
+</android.support.v7.widget.CardView>

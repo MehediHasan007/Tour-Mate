@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+
+    <FrameLayout
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MapsActivity" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/searchLocationET"
+            android:layout_weight="2"
+            android:hint="Location"
+            android:background="@drawable/rounded_edit_text"
+            android:textAlignment="center"
+            android:textColor="@color/Black"
+            android:singleLine="true"
+            android:imeOptions="actionDone"
+            android:layout_margin="5dp"
+            android:textSize="20dp"
+            android:layout_width="0dp"
+            android:layout_height="40dp" />
+        <Button
+            android:id="@+id/searchBtn"
+            android:layout_weight=".5"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:text="Search"
+            android:textSize="16dp"
+            android:textColor="@color/Black"
+            android:background="@drawable/rounded_edit_text"
+            android:textAllCaps="false"
+            android:onClick="searchLocation" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@id/linearLayout"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/hospitalET"
+            android:layout_weight="1"
+            android:text="Hospital"
+            android:background="@drawable/rounded_edit_text"
+            android:textAlignment="center"
+            android:textColor="@color/Black"
+            android:onClick="searchLocation"
+            android:textAllCaps="false"
+            android:layout_margin="5dp"
+            android:textSize="16dp"
+            android:layout_width="0dp"
+            android:layout_height="40dp" />
+        <Button
+            android:id="@+id/atmET"
+            android:layout_weight="1"
+            android:text="ATM"
+            android:background="@drawable/rounded_edit_text"
+            android:textAlignment="center"
+            android:textColor="@color/Black"
+            android:onClick="searchLocation"
+            android:textAllCaps="false"
+            android:layout_margin="5dp"
+            android:textSize="16dp"
+            android:layout_width="0dp"
+            android:layout_height="40dp" />
+        <Button
+            android:id="@+id/bus_stationET"
+            android:layout_weight="1"
+            android:text="Bus Station"
+            android:background="@drawable/rounded_edit_text"
+            android:textAlignment="center"
+            android:textColor="@color/Black"
+            android:onClick="searchLocation"
+            android:textAllCaps="false"
+            android:layout_margin="5dp"
+            android:textSize="16dp"
+            android:layout_width="0dp"
+            android:layout_height="40dp" />
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
